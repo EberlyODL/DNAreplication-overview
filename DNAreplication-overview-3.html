@@ -1,0 +1,308 @@
+<link rel="import" href="../lrndesign-animationctrl/lrndesign-animationctrl.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+
+<dom-module id="DNAreplication-overview-3">
+    <template>
+        <style>
+             :host {
+                display: block;
+            }
+        </style>
+
+        <lrndesign-animationctrl>
+            <lrndesign-animationctrl-button name="play" icon="media"></lrndesign-animationctrl-button>
+            <lrndesign-animationctrl-button name="replay" icon="media"></lrndesign-animationctrl-button>
+        </lrndesign-animationctrl>
+
+        <svg id="DNA" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 250">
+            <title>DNA_replication</title>
+            <g id="textthree">
+                <text transform="translate(58.1 213.1)" font-size="14" font-family="OpenSans, Open Sans">The template is used to attach two nucleotides</text>
+            </g>
+            <g id="textfour">
+                <text transform="translate(29.02 204.7)" font-size="14" font-family="OpenSans, Open Sans">Two copies are now created and the cell can now divide
+                    <tspan x="79.32" y="16.8">Notice the strands are identical</tspan>
+                </text>
+            </g>
+            <g id="rightpurpleone">
+                <g id="Layer0_0_FILL" data-name="Layer0 0 FILL">
+                    <path d="M297.58,149.33l5.25-10.83H262.68v-7h-10v36h10v-6l40.2,0Z" fill="#8c1194" />
+                </g>
+                <text transform="translate(276 155)" font-size="14" fill="#fff" font-family="OpenSans-Bold, Open Sans" font-weight="700">T</text>
+            </g>
+            <g id="rightpurplethree">
+                <g id="Layer0_0_FILL-2" data-name="Layer0 0 FILL">
+                    <path d="M262.67,135.37V128.5h41.6c-3-2.53-4.45-6.23-4.45-11.13a19.51,19.51,0,0,1,1.25-6.25,15.75,15.75,0,0,1,2.7-4.62h-41.1V99.37h-10v36Z"
+                        fill="#8c1194" />
+                </g>
+                <text transform="translate(276 122)" font-size="14" fill="#fff" font-family="OpenSans-Bold, Open Sans" font-weight="700">C</text>
+            </g>
+            <g id="rightpurpletwo">
+                <g id="Layer0_0_FILL-3" data-name="Layer0 0 FILL">
+                    <path d="M262.67,70.49v-7h-10v36h10v-6h40.6L309.42,82l-4.75-11.5Z" fill="#8c1194" />
+                </g>
+                <text transform="translate(276 86.5)" font-size="14" fill="#fff" font-family="OpenSans-Bold, Open Sans" font-weight="700">A</text>
+            </g>
+            <g id="rightpurpleone-2" data-name="rightpurpleone">
+                <g id="Layer0_0_FILL-4" data-name="Layer0 0 FILL">
+                    <path d="M262.67,35V28h-10V63.84h10V57h39a29,29,0,0,0,2.85-11.21c0-3-1-6.36-2.85-10.79Z" fill="#8c1194" />
+                </g>
+                <text transform="translate(276 50)" font-size="14" fill="#fff" font-family="OpenSans-Bold, Open Sans" font-weight="700">G</text>
+            </g>
+            <g id="rightnumbers">
+                <text transform="translate(237.67 37)" font-size="14" font-family="MyriadPro-Bold, Myriad Pro" font-weight="700">5
+                    <tspan x="7.77" y="0" letter-spacing="-0.07em">’</tspan>
+                </text>
+                <text transform="translate(237.67 167.5)" font-size="14" font-family="MyriadPro-Bold, Myriad Pro" font-weight="700">3
+                    <tspan x="7.77" y="0" letter-spacing="-0.07em">’</tspan>
+                </text>
+            </g>
+            <g id="leftpurpleone">
+                <g id="Layer0_0_FILL-5" data-name="Layer0 0 FILL">
+                    <path d="M143,28v7h-41.6c3,2.53,4.45,6.1,4.45,11a19.51,19.51,0,0,1-1.25,6.25,16.26,16.26,0,0,1-2.7,4.75H143v7h10V28Z" fill="#8c1194"
+                    />
+                </g>
+                <text transform="translate(121.5 50)" font-size="14" fill="#fff" font-family="OpenSans-Bold, Open Sans" font-weight="700">C</text>
+            </g>
+            <g id="leftpurpletwo">
+                <g id="Layer0_0_FILL-6" data-name="Layer0 0 FILL">
+                    <path d="M143,63.46v7H104l6.3,11.41L104,93.5h39v6h10v-36Z" fill="#8c1194" />
+                </g>
+                <text transform="translate(121.5 86.5)" font-size="14" fill="#fff" font-family="OpenSans-Bold, Open Sans" font-weight="700">T</text>
+            </g>
+            <g id="leftpurplethree">
+                <g id="Layer0_0_FILL-7" data-name="Layer0 0 FILL">
+                    <path d="M143,99.49v7H104c-2.37,2.1-3.65,5.69-3.85,10.79s1.08,8.85,3.85,11.21h39v7h10v-36Z" fill="#8c1194" />
+                </g>
+                <text transform="translate(121.5 122)" font-size="14" fill="#fff" font-family="OpenSans-Bold, Open Sans" font-weight="700">G</text>
+            </g>
+            <g id="leftpurplefour">
+                <g id="Layer0_0_FILL-8" data-name="Layer0 0 FILL">
+                    <path d="M143,161.5v6h10V132.42H143v6.08h-40.6l-6.15,11.42L101,161.5Z" fill="#8c1194" />
+                </g>
+                <text transform="translate(121.5 155)" font-size="14" fill="#fff" font-family="OpenSans-Bold, Open Sans" font-weight="700">A</text>
+            </g>
+            <g id="leftnumbers">
+                <text transform="translate(156.5 37)" font-size="14" font-family="MyriadPro-Bold, Myriad Pro" font-weight="700">3
+                    <tspan x="7.77" y="0" letter-spacing="-0.07em">’</tspan>
+                </text>
+                <text transform="translate(156.5 167.5)" font-size="14" font-family="MyriadPro-Bold, Myriad Pro" font-weight="700">5
+                    <tspan x="7.77" y="0" letter-spacing="-0.07em">’</tspan>
+                </text>
+            </g>
+            <g id="rightstack">
+                <g id="Layer0_0_FILL-9" data-name="Layer0 0 FILL">
+                    <path d="M340.56,93.5v-23h-38.9l6.45,11.4-6.45,11.6Z" fill="#f90" />
+                    <path d="M340.56,70.5v23h.1v6h10v-36h-10v7Z" fill="#333" />
+                </g>
+                <g id="Layer0_0_FILL-10" data-name="Layer0 0 FILL">
+                    <path d="M340.57,57V35h-41.9c3.23,2.07,4.85,5.57,4.85,10.83a12.63,12.63,0,0,1-2.25,8.35L298.67,57Z" fill="#006" />
+                    <path d="M350.67,28h-10v6.83h-.1v22h.1v7h10Z" fill="#333" />
+                </g>
+                <g id="Layer0_0_FILL-11" data-name="Layer0 0 FILL">
+                    <path d="M340.66,161.5v-23h-39.1l-5,11,5.25,12Z" fill="#666" />
+                    <path d="M340.66,131.5v36h10v-36Z" fill="#333" />
+                </g>
+                <g id="Layer0_0_FILL-12" data-name="Layer0 0 FILL">
+                    <path d="M340.66,128.5v-22h-39q-3.9,4-4,10.55a17.22,17.22,0,0,0,4,11.45Z" fill="#ff008c" />
+                    <path d="M340.66,99.5v36h10v-36Z" fill="#333" />
+                </g>
+                <text transform="translate(320 50)" font-size="14" fill="#fff" font-family="OpenSans-Bold, Open Sans" font-weight="700">C</text>
+                <text transform="translate(320 122)" font-size="14" fill="#fff" font-family="OpenSans-Bold, Open Sans" font-weight="700">G</text>
+                <text transform="translate(320 86.5)" font-size="14" fill="#fff" font-family="OpenSans-Bold, Open Sans" font-weight="700">T</text>
+                <text transform="translate(320 155)" font-size="14" fill="#fff" font-family="OpenSans-Bold, Open Sans" font-weight="700">A</text>
+                <text transform="translate(355.17 37)" font-size="14" font-family="MyriadPro-Bold, Myriad Pro" font-weight="700">3
+                    <tspan x="7.77" y="0" letter-spacing="-0.07em">’</tspan>
+                </text>
+                <text transform="translate(355.17 167.5)" font-size="14" font-family="MyriadPro-Bold, Myriad Pro" font-weight="700">5
+                    <tspan x="7.77" y="0" letter-spacing="-0.07em">’</tspan>
+                </text>
+            </g>
+            <g id="leftstack">
+                <g id="Layer0_0_FILL-13" data-name="Layer0 0 FILL">
+                    <path d="M104.1,93.5l6.35-11.6L104,70.5H65v23Z" fill="#666" />
+                    <path d="M65,93.5v-23h0v-7H55v36H65v-6Z" fill="#333" />
+                </g>
+                <g id="Layer0_0_FILL-14" data-name="Layer0 0 FILL">
+                    <path d="M104.15,161.5,99,149.6l5-11.1H64.9v23h39.25Z" fill="#f90" />
+                    <path d="M64.9,138.5H65v-7H55v36H65v-6h-.1Z" fill="#333" />
+                </g>
+                <g id="Layer0_0_FILL-15" data-name="Layer0 0 FILL">
+                    <path d="M100.2,117.3a15.24,15.24,0,0,1,4-10.8H65v22h39.4Q100.1,124.5,100.2,117.3Z" fill="#006" />
+                    <path d="M65,106.5v-7H55v36H65v-29Z" fill="#333" />
+                </g>
+                <g id="Layer0_0_FILL-16" data-name="Layer0 0 FILL">
+                    <path d="M65,35V57h39q3.9-4,4-10.55A17.22,17.22,0,0,0,104,35Z" fill="#ff008c" />
+                    <path d="M65,64V28H55V64Z" fill="#333" />
+                </g>
+                <text transform="translate(77.5 50)" font-size="14" fill="#fff" font-family="OpenSans-Bold, Open Sans" font-weight="700">G</text>
+                <text transform="translate(77.5 122)" font-size="14" fill="#fff" font-family="OpenSans-Bold, Open Sans" font-weight="700">C</text>
+                <text transform="translate(77.5 86.5)" font-size="14" fill="#fff" font-family="OpenSans-Bold, Open Sans" font-weight="700">A</text>
+                <text transform="translate(77.5 155)" font-size="14" fill="#fff" font-family="OpenSans-Bold, Open Sans" font-weight="700">T</text>
+                <text transform="translate(39 37)" font-size="14" font-family="MyriadPro-Bold, Myriad Pro" font-weight="700">5
+                    <tspan x="7.77" y="0" letter-spacing="-0.07em">’</tspan>
+                </text>
+                <text transform="translate(39 167.5)" font-size="14" font-family="MyriadPro-Bold, Myriad Pro" font-weight="700">3
+                    <tspan x="7.77" y="0" letter-spacing="-0.07em">’</tspan>
+                </text>
+            </g>
+        </svg>
+
+    </template>
+    <script>
+        Polymer({
+            is: 'DNAreplication-overview-3',
+
+            properties: {
+                tl: {
+                    type: Object
+                },
+            },
+
+            ready: function () {
+                var root = this;
+                var tl = new TimelineMax();
+                var tlleft = new TimelineMax();
+                var tlright = new TimelineMax();
+                var playButton = this.$$('#play-button');
+                var replayButton = this.$$('#replay-button');
+                var svg = this.$$('#DNA');
+
+                // Text
+                var textfour = svg.getElementById('textfour');
+                var textthree = svg.getElementById('textthree');
+
+                // SVG
+                var leftstack = svg.getElementById('leftstack');
+                var leftpurpleone = svg.getElementById('leftpurpleone');
+                var leftpurpletwo = svg.getElementById('leftpurpletwo');
+                var leftpurplethree = svg.getElementById('leftpurplethree');
+                var leftpurplefour = svg.getElementById('leftpurplefour');
+                var leftnumbers = svg.getElementById('leftnumbers');
+
+                var rightstack = svg.getElementById('rightstack');
+                var rightpurpleone = svg.getElementById('rightpurpleone');
+                var rightpurpleone2 = svg.getElementById('rightpurpleone-2');
+                var rightpurpletwo = svg.getElementById('rightpurpletwo');
+                var rightpurplethree = svg.getElementById('rightpurplethree');
+                var rightnumbers = svg.getElementById('rightnumbers');
+
+                // Set Animate
+                tl.set([svg], {
+                        y: "+=20"
+                    })
+                    .set([textfour, leftnumbers, rightnumbers], {
+                        display: "none"
+                    })
+                    .set([rightpurpleone], {
+                        x: "-=10",
+                        y: "-=5",
+
+                    })
+                    .set([rightpurpletwo], {
+                        x: "-=40",
+                        y: "-=15",
+                        alpha: .4
+                    })
+                    .set([rightpurplethree], {
+                        x: "-=20",
+                        y: "-=12",
+                        alpha: .6
+                    })
+                    .set([rightpurpleone2], {
+                        x: "-=60",
+                        y: "-=20",
+                        alpha: .2
+                    })
+                    .set([leftpurpleone], {
+                        x: "+=35",
+                        y: "-=25",
+                        alpha: .2,
+                    })
+                    .set([leftpurpletwo], {
+                        x: "+=25",
+                        y: "-=15",
+                        alpha: .4
+                    })
+                    .set([leftpurplethree], {
+                        x: "+=20",
+                        y: "-=10",
+                        alpha: .6
+                    })
+                    .set([leftpurplefour], {
+                        x: "+=25",
+                        alpha: .8
+                    });
+
+                // Animate left
+                tlleft.to([leftpurplefour], .5, {
+                        x: "-=25",
+                    })
+                    .to([leftpurplethree], .5, {
+                        x: "-=20",
+                        y: "+=10"
+                    })
+                    .to([leftpurpletwo], .5, {
+                        x: "-=25",
+                        y: "+=15"
+                    })
+                    .to([leftpurpleone], .5, {
+                        x: "-=35",
+                        y: "+=25"
+                    })
+                    .to([leftnumbers, rightnumbers], .5, {
+                        display: "block"
+                    })
+
+                // Animate Right
+                tlright.to([rightpurpleone], .5, {
+                        x: "+=10",
+                        y: "+=5"
+                    })
+                    .to([rightpurplethree], .5, {
+                        x: "+=20",
+                        y: "+=12"
+                    })
+                    .to([rightpurpletwo], .5, {
+                        x: "+=40",
+                        y: "+=15"
+                    })
+                    .to([rightpurpleone2], .5, {
+                        x: "+=60",
+                        y: "+=20"
+                    })
+                    .to([textthree], .2, {
+                        display: "none"
+                    })
+                    .to([textfour], .2, {
+                        display: "block"
+                    });
+
+                tl.pause();
+                tlleft.pause();
+                tlright.pause();
+
+                // listen for button clicks and play and pause the animation
+                this.$$('lrndesign-animationctrl').addEventListener('lrndesign-animationctrl-click',
+                    function (e) {
+                        var name = e.detail.button;
+                        if (name === 'play') {
+                            tl.play();
+                            tlleft.play();
+                            tlright.play();
+                        }
+                        if (name === 'replay') {
+                            tl.progress(0);
+                            tlleft.progress(0);
+                            tlright.progress(0);
+                            tl.pause();
+                            tlleft.pause();
+                            tlright.pause();
+                        }
+                    });
+
+
+            }
+        });
+    </script>
+</dom-module>

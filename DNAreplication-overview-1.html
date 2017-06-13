@@ -1,0 +1,173 @@
+<link rel="import" href="../lrndesign-animationctrl/lrndesign-animationctrl.html">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+
+<dom-module id="DNAreplication-overview-1">
+    <template>
+        <style>
+             :host {
+                display: block;
+            }
+        </style>
+
+        <lrndesign-animationctrl>
+            <lrndesign-animationctrl-button name="play" icon="media"></lrndesign-animationctrl-button>
+            <lrndesign-animationctrl-button name="replay" icon="media"></lrndesign-animationctrl-button>
+        </lrndesign-animationctrl>
+
+        <svg id="DNA" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 250">
+            <title>DNA_replication</title>
+            <g id="textone">
+                <text transform="translate(113.6 204.7)" font-size="14" font-family="OpenSans, Open Sans">At first, parental DNA has two
+                    <tspan x="18.89" y="16.8">complimentary strands </tspan>
+                </text>
+            </g>
+            <g id="texttwo">
+                <text transform="translate(14.27 213.1)" font-size="14" font-family="OpenSans, Open Sans">The two strands split, creating templates for two full strands</text>
+            </g>
+            <g id="note">
+                <text transform="translate(15 234.7)" font-size="10" font-family="OpenSans, Open Sans">Note: During DNA replication, the DNA is not split all at once
+                </text>
+            </g>
+            <g id="rightstack">
+                <g id="Layer0_0_FILL-9" data-name="Layer0 0 FILL">
+                    <path d="M340.56,93.5v-23h-38.9l6.45,11.4-6.45,11.6Z" fill="#f90" />
+                    <path d="M340.56,70.5v23h.1v6h10v-36h-10v7Z" fill="#333" />
+                </g>
+                <g id="Layer0_0_FILL-10" data-name="Layer0 0 FILL">
+                    <path d="M340.57,57V35h-41.9c3.23,2.07,4.85,5.57,4.85,10.83a12.63,12.63,0,0,1-2.25,8.35L298.67,57Z" fill="#006" />
+                    <path d="M350.67,28h-10v6.83h-.1v22h.1v7h10Z" fill="#333" />
+                </g>
+                <g id="Layer0_0_FILL-11" data-name="Layer0 0 FILL">
+                    <path d="M340.66,161.5v-23h-39.1l-5,11,5.25,12Z" fill="#666" />
+                    <path d="M340.66,131.5v36h10v-36Z" fill="#333" />
+                </g>
+                <g id="Layer0_0_FILL-12" data-name="Layer0 0 FILL">
+                    <path d="M340.66,128.5v-22h-39q-3.9,4-4,10.55a17.22,17.22,0,0,0,4,11.45Z" fill="#ff008c" />
+                    <path d="M340.66,99.5v36h10v-36Z" fill="#333" />
+                </g>
+                <text transform="translate(320 50)" font-size="14" fill="#fff" font-family="OpenSans-Bold, Open Sans" font-weight="700">C</text>
+                <text transform="translate(320 122)" font-size="14" fill="#fff" font-family="OpenSans-Bold, Open Sans" font-weight="700">G</text>
+                <text transform="translate(320 86.5)" font-size="14" fill="#fff" font-family="OpenSans-Bold, Open Sans" font-weight="700">T</text>
+                <text transform="translate(320 155)" font-size="14" fill="#fff" font-family="OpenSans-Bold, Open Sans" font-weight="700">A</text>
+                <text transform="translate(355.17 37)" font-size="14" font-family="MyriadPro-Bold, Myriad Pro" font-weight="700">3
+                    <tspan x="7.77" y="0" letter-spacing="-0.07em">’</tspan>
+                </text>
+                <text transform="translate(355.17 167.5)" font-size="14" font-family="MyriadPro-Bold, Myriad Pro" font-weight="700">5
+                    <tspan x="7.77" y="0" letter-spacing="-0.07em">’</tspan>
+                </text>
+            </g>
+            <g id="leftstack">
+                <g id="Layer0_0_FILL-13" data-name="Layer0 0 FILL">
+                    <path d="M104.1,93.5l6.35-11.6L104,70.5H65v23Z" fill="#666" />
+                    <path d="M65,93.5v-23h0v-7H55v36H65v-6Z" fill="#333" />
+                </g>
+                <g id="Layer0_0_FILL-14" data-name="Layer0 0 FILL">
+                    <path d="M104.15,161.5,99,149.6l5-11.1H64.9v23h39.25Z" fill="#f90" />
+                    <path d="M64.9,138.5H65v-7H55v36H65v-6h-.1Z" fill="#333" />
+                </g>
+                <g id="Layer0_0_FILL-15" data-name="Layer0 0 FILL">
+                    <path d="M100.2,117.3a15.24,15.24,0,0,1,4-10.8H65v22h39.4Q100.1,124.5,100.2,117.3Z" fill="#006" />
+                    <path d="M65,106.5v-7H55v36H65v-29Z" fill="#333" />
+                </g>
+                <g id="Layer0_0_FILL-16" data-name="Layer0 0 FILL">
+                    <path d="M65,35V57h39q3.9-4,4-10.55A17.22,17.22,0,0,0,104,35Z" fill="#ff008c" />
+                    <path d="M65,64V28H55V64Z" fill="#333" />
+                </g>
+                <text transform="translate(77.5 50)" font-size="14" fill="#fff" font-family="OpenSans-Bold, Open Sans" font-weight="700">G</text>
+                <text transform="translate(77.5 122)" font-size="14" fill="#fff" font-family="OpenSans-Bold, Open Sans" font-weight="700">C</text>
+                <text transform="translate(77.5 86.5)" font-size="14" fill="#fff" font-family="OpenSans-Bold, Open Sans" font-weight="700">A</text>
+                <text transform="translate(77.5 155)" font-size="14" fill="#fff" font-family="OpenSans-Bold, Open Sans" font-weight="700">T</text>
+                <text transform="translate(39 37)" font-size="14" font-family="MyriadPro-Bold, Myriad Pro" font-weight="700">5
+                    <tspan x="7.77" y="0" letter-spacing="-0.07em">’</tspan>
+                </text>
+                <text transform="translate(39 167.5)" font-size="14" font-family="MyriadPro-Bold, Myriad Pro" font-weight="700">3
+                    <tspan x="7.77" y="0" letter-spacing="-0.07em">’</tspan>
+                </text>
+            </g>
+        </svg>
+
+    </template>
+    <script>
+        Polymer({
+            is: 'DNAreplication-overview-1',
+
+            properties: {
+                tl: {
+                    type: Object
+                },
+            },
+
+            ready: function () {
+                var root = this;
+                var tl = new TimelineMax();
+                var tlleft = new TimelineMax();
+                var tlright = new TimelineMax();
+                var playButton = this.$$('#play-button');
+                var replayButton = this.$$('#replay-button');
+                var svg = this.$$('#DNA');
+
+                // Text
+                var textone = svg.getElementById('textone');
+                var texttwo = svg.getElementById('texttwo');
+                var note = svg.getElementById('note');
+
+                // SVG
+                var leftstack = svg.getElementById('leftstack');
+                var rightstack = svg.getElementById('rightstack');
+
+                // Set Animate
+                tl.set([leftstack], {
+                        x: "+=100"
+                    })
+                    .set([rightstack], {
+                        x: "-=100"
+                    })
+                    .set([texttwo, note], {
+                        display: "none"
+                    });
+
+                // Animate Left
+                tlleft.to([leftstack], .5, {
+                        x: "-=100"
+                    })
+                    .to([textone], .1, {
+                        display: "none"
+                    })
+                    .to([texttwo, note], .5, {
+                        display: "block"
+                    });
+
+                // Animate Right
+                tlright.to([rightstack], .5, {
+                    x: "+=100"
+                });
+
+
+                tl.pause();
+                tlleft.pause();
+                tlright.pause();
+
+                // listen for button clicks and play and pause the animation
+                this.$$('lrndesign-animationctrl').addEventListener('lrndesign-animationctrl-click',
+                    function (e) {
+                        var name = e.detail.button;
+                        if (name === 'play') {
+                            tl.play();
+                            tlleft.play();
+                            tlright.play();
+                        }
+                        if (name === 'replay') {
+                            tl.progress(0);
+                            tlleft.progress(0);
+                            tlright.progress(0);
+                            tl.pause();
+                            tlleft.pause();
+                            tlright.pause();
+                        }
+                    });
+
+
+            }
+        });
+    </script>
+</dom-module>
